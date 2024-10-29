@@ -1,0 +1,6 @@
+{{ $paginator := .Paginate .Pages }}
+<ul>
+{{ range $paginator.Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ or .LinkTitle .RelPermalink }}</a></li>
+{{ end }}
+</ul>
