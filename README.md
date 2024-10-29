@@ -7,8 +7,8 @@ and modern.
 
 ## Inspirations
 
-- [Perfect Motherfucking Website]("https://perfectmotherfuckingwebsite.com/")
-- [VimHelp]("https://vimhelp.org/")
+- [Perfect Motherfucking Website](https://perfectmotherfuckingwebsite.com/)
+- [VimHelp](https://vimhelp.org/)
 - [Nih.ar](https://nih.ar)
 - [ig.emnace](https://ig.emnace.org/index.html)
 - [Cole roberts dev](https://coleroberts.dev/index)
