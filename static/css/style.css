@@ -110,6 +110,14 @@ figure img {
     max-width: 100%;
 }
 
+/* Tables */
+table { border-collapse: collapse; }
+thead tr { border-bottom: 2px solid var(--bg1); }
+tbody tr { border-top: 1px solid var(--bg1); }
+th, td { padding: 0 2ch 0 1ch; }
+th { text-align: left; padding-bottom: 0.5em; color: var(--green); }
+th:not(:first-child), td:not(:first-child) { border-left: 1px solid var(--bg1); }
+
 /* Block quotes */
 blockquote {
     border: 1px solid var(--bg2);
