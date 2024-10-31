@@ -9,13 +9,15 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏠</text></svg>">
     </head>
     <body>
-        <nav>
+        <nav id="main-nav">
             <a href="/">Home</a> // <a href="/about/">About</a> // <a href="/references/">References</a> // <a href="/archive/">Archive</a>
-            <hr>
         </nav>
         <main>
-            <header>{{ block "header" . }}{{- with .Title }}<h1>{{ . }}</h1>{{ end }}{{ end }}</header>
+            <header>
+               {{ block "header" . }}{{ partial "header-title.html" . }}{{ end }}
+            </header>
             <article>{{ block "main" . }}{{ .Content }}{{ end }}</article>
+            {{ partial "section-nav.html" . }}
         </main>
         <footer>{{ partial "footer.html" . }}</footer>
     </body>
