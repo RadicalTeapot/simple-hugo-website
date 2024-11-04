@@ -49,15 +49,16 @@ body {
 }
 
 /* Headers */
-h1,h2,h3,h4,h5,h6 {
-    color: var(--aqua);
-    font-size: 1em;
+h2,h3,h4,h5,h6 {
+    font-size: 0.9em;
     line-height: 1.2em;
 }
+h2 { color: var(--aqua); font-size: 1em; }
+h3,h4 { color: var(--yellow); }
 h5,h6 { color: var(--gray); }
 
 /* Page title */
-header h1 {
+h1 {
     display: inline-block;
     color:var(--orange);
     font-size:1.5em;
@@ -118,23 +119,25 @@ th, td { padding: 0 2ch 0 1ch; }
 th { text-align: left; padding-bottom: 0.5em; color: var(--green); }
 th:not(:first-child), td:not(:first-child) { border-left: 1px solid var(--bg1); }
 
-/* Block quotes */
-blockquote {
+/* Block quote and aside */
+blockquote, aside {
     border: 1px solid var(--bg2);
     border-left: 1ch solid var(--bg4);
     padding-left: 2ch;
     color: var(--gray);
     background: var(--bg1);
-    font-style: italic;
     margin: 1em 0px;
     padding: 0px 1em;
 }
-blockquote.caution { border-left-color: var(--yellow); color: var(--yellow); font-style: normal;  }
-blockquote.important { border-left-color: var(--red); color: var(--red); font-style: normal;  }
-blockquote.note { border-left-color: var(--blue); color: var(--blue-lighter); font-style: normal; }
-blockquote.tip { border-left-color: var(--green); color: var(--green); font-style: normal; }
-blockquote.warning { border-left-color: var(--orange); color: var(--orange); font-style: normal; }
-blockquote header { font-size: 0.9em; line-height: 1.2em; margin: 0.5em 0; }
+blockquote header, aside header { font-size: 0.9em; line-height: 1.2em; margin: 0.5em 0; }
+
+blockquote { font-style: italic; }
+
+aside.caution { border-left-color: var(--yellow); color: var(--yellow); font-style: normal;  }
+aside.important { border-left-color: var(--red); color: var(--red); font-style: normal;  }
+aside.note { border-left-color: var(--blue); color: var(--blue-lighter); font-style: normal; }
+aside.tip { border-left-color: var(--green); color: var(--green); font-style: normal; }
+aside.warning { border-left-color: var(--orange); color: var(--orange); font-style: normal; }
 
 /* standard links (also includes <a class="l">) */
 a:where(:link, :visited) { color: var(--blue); }

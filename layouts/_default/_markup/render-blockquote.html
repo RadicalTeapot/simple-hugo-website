@@ -7,13 +7,13 @@
 }}
 
 {{ if eq .Type "alert" }}
-  <blockquote class="{{ .AlertType }}">
+  <aside class="{{ .AlertType }}">
     <header>
       {{ transform.Emojify (index $emojis .AlertType) }}
       <strong>{{ with .AlertTitle }} {{ . }} {{ else }} {{ title .AlertType }} {{ end }}</strong>
     </header>
     {{ .Text }}
-  </blockquote>
+  </aside>
 {{ else }}
   <blockquote>
     {{ .Text }}
