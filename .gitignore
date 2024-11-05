@@ -2,3 +2,4 @@
 public/**/*
 update-content.ps1
 content/**/*
+static/images/**/*
